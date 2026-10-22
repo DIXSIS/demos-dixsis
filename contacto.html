@@ -96,7 +96,7 @@ h1 em{font-style:italic;color:var(--rust)}
 .widget-invite-icon{font-size:40px;margin-bottom:16px}
 .widget-invite-title{font-family:"Playfair Display",serif;font-size:22px;font-weight:700;color:var(--brown);margin-bottom:10px}
 .widget-invite-sub{font-size:14px;color:var(--muted);line-height:1.65;margin-bottom:24px}
-.widget-arrows{display:flex;justify-content:space-between;align-items:flex-end;padding:0 8px}
+.widget-arrows{display:flex;justify-content:center;align-items:flex-end;padding:0 8px}
 .arrow-item{display:flex;flex-direction:column;align-items:center;gap:6px}
 .arrow-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:var(--muted)}
 .arrow-icon{font-size:28px;animation:bounce 1.8s ease infinite}
@@ -190,11 +190,10 @@ footer{
   <!-- WIDGET INVITE -->
   <div class="widget-invite">
     <div class="widget-invite-icon">👋</div>
-    <div class="widget-invite-title">Elige cómo prefieres hablar</div>
+    <div class="widget-invite-title">Escríbenos ahora</div>
     <div class="widget-invite-sub">
-      Los botones de <strong>chat de texto</strong> y <strong>llamada de voz</strong>
-      ya están activos en las esquinas de tu pantalla.<br>
-      Toca el que prefieras y conectas de inmediato con nuestro equipo.
+      El <strong>chat</strong> ya está activo en la esquina inferior izquierda de tu pantalla.<br>
+      Tócalo y conectas de inmediato con nuestro equipo.
     </div>
     <div class="widget-arrows">
       <div class="arrow-item">
@@ -202,11 +201,10 @@ footer{
         <div class="arrow-icon left">↙️</div>
         <div class="arrow-corner">Esquina inferior izquierda</div>
       </div>
-      <div class="arrow-item">
-        <div class="arrow-label">Llamada</div>
-        <div class="arrow-icon right">↘️</div>
-        <div class="arrow-corner">Esquina inferior derecha</div>
-      </div>
+    </div>
+    <div class="widget-invite-sub" style="margin-top:16px">
+      ¿Quieres escuchar a un agente de voz? Varios de nuestros demos incluyen llamada en vivo:
+      <a href="https://demos.dixsis.com/">pruébalos aquí</a>.
     </div>
   </div>
 
@@ -250,7 +248,7 @@ footer{
   </div>
 </footer>
 
-<!-- DIXSIS WEBCHAT (izquierda) -->
+<!-- DIXSIS WEBCHAT -->
 <script>
 (function(){
   var s=document.createElement("script");
@@ -261,16 +259,6 @@ footer{
 })();
 </script>
 
-<!-- DIXSIS WEBCALL (derecha) -->
-<script>
-(function(){
-  var s=document.createElement("script");
-  s.src="https://s3.us-east-1.amazonaws.com/livekit.us1.webcall.bundles/channel-bundles/dc24e94a-8b77-4947-bf45-ea1d9beeaec5/19a3a092-f1f2-4b3d-bca0-0aab3f7d7cf7/19a3a092-f1f2-4b3d-bca0-0aab3f7d7cf7.bundle.js";
-  s.charset="UTF-8";
-  s.onload=function(){window.Webcall.init()};
-  document.head.appendChild(s);
-})();
-</script>
 
 </body>
 </html>
